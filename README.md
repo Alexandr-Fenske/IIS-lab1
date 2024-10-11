@@ -22,3 +22,5 @@ pip install -r requirements.txt
 • Для столбцов 'fc', 'int_memory', 'n_cores', 'pc', 'sc_h', 'sc_w', 'talk_time' изменен тип данных на int8. <br/>
 • Для столбцов 'battery_power', 'mobile_wt', 'px_height', 'px_width', 'ram' изменен тип данных на int16. <br/>
 • Для столбцов 'clock_speed', 'm_dep' изменен тип данных на float16. <br/>
+• Были убраны нулевые значения у 'sc_w', 'pc', 'px_height', 'fc'. <br/>
+Итоговый размер составил 55.7 KB против 328.3 KB.
