@@ -39,5 +39,42 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/364b0988-f4d3-44df-810a-cf86b9f94e65)
 
 Этот график отображает распределение мощности батареи для мобильных телефонов. По оси X — значения мощности батареи, по оси Y — частота (количество) телефонов с определенной мощностью. <br/>
-Гистограмма помогает понять, как распределены данные. Она показывает, какие значения встречаются чаще, а какие реже. Например, можно выявить, находится ли большинство телефонов в нижнем или верхнем диапазоне по мощности батареи. Это важно для анализа рынка, чтобы понимать, какие устройства более популярны в зависимости от их характеристик батареи.
+2)  Столбчатая диаграмма средней цены по наличию двух SIM-карт:
+```
+plt.figure(figsize=(6, 4))
+plt.scatter(df['ram'], df['price_range'], color='purple')
+plt.title('RAM vs Price Range')
+plt.xlabel('RAM')
+plt.ylabel('Price Range')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/086c5c35-8abe-4b5d-a1ce-86befc3b47ca)
 
+Этот график показывает средний ценовой диапазон телефонов с одной SIM-картой и двумя SIM-картами. По оси X — наличие двойной SIM (0 — одна SIM, 1 — две SIM), по оси Y — средняя цена для каждой категории. <br/>
+3) Точечный график зависимости RAM от ценового диапазона:
+```
+plt.figure(figsize=(6, 4))
+plt.plot(df['px_height'], df['px_width'], color='red')
+plt.title('Pixel Height vs Pixel Width')
+plt.xlabel('Pixel Height')
+plt.ylabel('Pixel Width')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/f72b6508-196d-442a-ab52-aff01c8f4137)
+Точечный график показывает зависимость объема оперативной памяти (RAM) от ценового диапазона. По оси X — объем RAM, по оси Y — ценовой диапазон устройства.
+4) Correlation Heatmap (тепловая карта корреляции):
+```
+plt.figure(figsize=(10, 8))
+correlation_matrix = df.corr()
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f')
+plt.title('Correlation Heatmap')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/f987a5b5-573a-4f84-8fab-160c6c1439d0)
+
+5) Pair plot (парный график):
+ ```
+sns.pairplot(df[['ram', 'battery_power', 'price_range']], hue='price_range', palette='coolwarm')
+plt.show()
+```   
+![image](https://github.com/user-attachments/assets/06a7790f-6037-424d-8dd0-55382126ae95)
