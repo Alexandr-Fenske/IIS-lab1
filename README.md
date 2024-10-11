@@ -25,3 +25,4 @@ pip install -r requirements.txt
 • Были убраны нулевые значения у 'sc_w', 'pc', 'px_height', 'fc'. <br/>
 
 Итоговый размер составил 55.7 KB против 328.3 KB.
+Обработанная выборка сохранена в файл `./data/clean_data.pkl`
