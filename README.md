@@ -24,5 +24,17 @@ pip install -r requirements.txt
 • Для столбцов 'clock_speed', 'm_dep' изменен тип данных на float16. <br/>
 • Были убраны нулевые значения у 'sc_w', 'pc', 'px_height', 'fc'. <br/>
 
-Итоговый размер составил 55.7 KB против 328.3 KB.
-Обработанная выборка сохранена в файл `./data/clean_data.pkl`
+Итоговый размер составил 55.7 KB против 328.3 KB. <br/>
+Обработанная выборка сохранена в файл `./data/clean_data.pkl` <br/>
+
+1) Гистограмма распределения мощности батареи:
+   ```
+plt.figure(figsize=(6, 4))
+plt.hist(df['battery_power'], bins=30, color='blue', edgecolor='black')
+plt.title('Distribution of Battery Power')
+plt.xlabel('Battery Power')
+plt.ylabel('Frequency')
+plt.show()
+![image](https://github.com/user-attachments/assets/d4aa751d-e5cd-48ae-ad4d-a7eeca138031)
+
+```
