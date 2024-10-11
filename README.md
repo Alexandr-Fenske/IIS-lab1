@@ -63,6 +63,7 @@ plt.ylabel('Pixel Width')
 plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/f72b6508-196d-442a-ab52-aff01c8f4137)
+
 Точечный график показывает зависимость объема оперативной памяти (RAM) от ценового диапазона. По оси X — объем RAM, по оси Y — ценовой диапазон устройства. <br/>
 
 4) Correlation Heatmap (тепловая карта корреляции):
