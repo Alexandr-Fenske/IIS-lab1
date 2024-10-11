@@ -35,6 +35,6 @@ plt.title('Distribution of Battery Power')
 plt.xlabel('Battery Power')
 plt.ylabel('Frequency')
 plt.show()
+```
 ![image](https://github.com/user-attachments/assets/d4aa751d-e5cd-48ae-ad4d-a7eeca138031)
 
-```
