@@ -28,7 +28,7 @@ pip install -r requirements.txt
 Обработанная выборка сохранена в файл `./data/clean_data.pkl` <br/>
 
 1) Гистограмма распределения мощности батареи:
-   ```
+```
 plt.figure(figsize=(6, 4))
 plt.hist(df['battery_power'], bins=30, color='blue', edgecolor='black')
 plt.title('Distribution of Battery Power')
@@ -36,5 +36,6 @@ plt.xlabel('Battery Power')
 plt.ylabel('Frequency')
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/d4aa751d-e5cd-48ae-ad4d-a7eeca138031)
+![image](https://github.com/user-attachments/assets/364b0988-f4d3-44df-810a-cf86b9f94e65)
+
 
