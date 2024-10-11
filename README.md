@@ -17,6 +17,8 @@ pip install -r requirements.txt
 Находится в `./eda/eda.ipynb`. Основные результаты: <br/>
 В ходе исследования были проведены действия: <br/>
 • Загрузка данных: df = pd.read_csv('../data/train.csv') <br/>
-• Была сделана проверка на дубликаты: df.duplicated().sum(). <br/>
-Дубликатов не было обнаружено. <br/>
+• Была сделана проверка на дубликаты: df.duplicated().sum(). Дубликатов не было обнаружено. <br/>
 • Для столбцов 'blue', 'dual_sim', 'four_g', 'three_g', 'touch_screen', 'wifi', 'price_range' изменен тип данных на category.
+• Для столбцов 'fc', 'int_memory', 'n_cores', 'pc', 'sc_h', 'sc_w', 'talk_time' изменен тип данных на int8.
+• Для столбцов 'battery_power', 'mobile_wt', 'px_height', 'px_width', 'ram' изменен тип данных на int16.
+• Для столбцов 'clock_speed', 'm_dep' изменен тип данных на float16.
