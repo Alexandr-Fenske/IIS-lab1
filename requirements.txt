@@ -3,3 +3,4 @@ matplotlib==3.9.2
 numpy==2.1.1
 pickle4==0.0.1
 seaborn==0.13.2
+bokeh==3.6.0
