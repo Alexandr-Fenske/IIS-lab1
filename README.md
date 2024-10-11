@@ -128,13 +128,6 @@ plt.show()
 Мощность батареи также оказывает влияние на цену телефона, хотя его корреляция с ценой не столь сильна. Тем не менее, устройства с мощной батареей чаще попадают в более дорогие ценовые категории, что подтверждает тенденцию, заметную на тепловой карте. <br/>
 
 6) Зависимость объема оперативной памяти (RAM) от ценового диапазона:
-   ```
-p1 = figure(title="RAM vs Price Range", x_axis_label="RAM (MB)", y_axis_label="Price Range",
-            tools="pan,wheel_zoom,box_zoom,reset,hover", tooltips=[("RAM", "@ram"), ("Price Range", "@price_range")])
-p1.circle('ram', 'price_range', size=8, source=source, color="navy", alpha=0.6)
-
-show(p1)
-```    
 
 ![image](https://github.com/user-attachments/assets/5791a7ea-90d9-4678-b88d-2f62f0a04bdb)
 
