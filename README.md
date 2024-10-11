@@ -7,8 +7,10 @@
 #  Запуск
 Для запуска проекта необходимо выполнить следующие команды: <br/>
 ```
-git clone ....
-cd ...
-установка окружения
-активация окружения
-установка зависимостей
+git clone https://github.com/Alexandr-Fenske/IIS-lab1.git
+cd IIS-lab1
+python -m venv .venv_lr-1
+.venv_lr-1/Scripts/activate
+pip install -r requirements.txt
+```
+# Исследование данных
