@@ -14,3 +14,9 @@ python -m venv .venv_lr-1
 pip install -r requirements.txt
 ```
 # Исследование данных
+Находится в `./eda/eda.ipynb`. Основные результаты: <br/>
+В ходе исследования были проведены действия: <br/>
+• Загрузка данных: df = pd.read_csv('../data/train.csv') <br/>
+• Была сделана проверка на дубликаты: df.duplicated().sum(). <br/>
+Дубликатов не было обнаружено. <br/>
+• Для столбцов 'blue', 'dual_sim', 'four_g', 'three_g', 'touch_screen', 'wifi', 'price_range' изменен тип данных на category.
