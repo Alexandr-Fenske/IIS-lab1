@@ -1,6 +1,8 @@
 pandas==2.2.3
 matplotlib==3.9.2
-numpy==2.1.1
+numpy==1.26.4
 pickle4==0.0.1
 seaborn==0.13.2
 bokeh==3.6.0
+scikit-learn
+mlflow==2.16
