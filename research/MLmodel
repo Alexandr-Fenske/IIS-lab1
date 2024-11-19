@@ -1,0 +1,43 @@
+artifact_path: models
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.16.0
+model_size_bytes: 2320949
+model_uuid: 1404906e52c74df4b8d0c5f90ad9d5d9
+run_id: 7617979ddc414cccb6465d6d1cfc02b7
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "integer", "name": "battery_power", "required": true}, {"type":
+    "long", "name": "blue", "required": true}, {"type": "float", "name": "clock_speed",
+    "required": true}, {"type": "long", "name": "dual_sim", "required": true}, {"type":
+    "integer", "name": "fc", "required": true}, {"type": "long", "name": "four_g",
+    "required": true}, {"type": "integer", "name": "int_memory", "required": true},
+    {"type": "float", "name": "m_dep", "required": true}, {"type": "integer", "name":
+    "mobile_wt", "required": true}, {"type": "integer", "name": "n_cores", "required":
+    true}, {"type": "integer", "name": "pc", "required": true}, {"type": "integer",
+    "name": "px_height", "required": true}, {"type": "integer", "name": "px_width",
+    "required": true}, {"type": "integer", "name": "ram", "required": true}, {"type":
+    "integer", "name": "sc_h", "required": true}, {"type": "integer", "name": "sc_w",
+    "required": true}, {"type": "integer", "name": "talk_time", "required": true},
+    {"type": "long", "name": "three_g", "required": true}, {"type": "long", "name":
+    "touch_screen", "required": true}, {"type": "long", "name": "wifi", "required":
+    true}]'
+  outputs: null
+  params: null
+utc_time_created: '2024-11-19 13:14:53.622744'
