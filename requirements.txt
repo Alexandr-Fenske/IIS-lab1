@@ -6,3 +6,5 @@ seaborn==0.13.2
 bokeh==3.6.0
 scikit-learn
 mlflow==2.16
+fastapi
+uvicorn
