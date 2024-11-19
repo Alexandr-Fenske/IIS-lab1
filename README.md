@@ -253,4 +253,33 @@ show(p3)
    docker run -p 8001:8000 -v $(pwd)/../models:/models estate_model:0
 ```
 
+### 6. Проверка роботоспособности сервиса
+Подставим в тело запроса одну строку из датафрейма в виде JSON-объекта:
+```
+ {
+    "battery_power": 1434,
+    "blue": 0,
+    "clock_speed": 1.4,
+    "dual_sim": 0,
+    "fc": 11,
+    "four_g": 1,
+    "int_memory": 49,
+    "m_dep": 0.5,
+    "mobile_wt": 108,
+    "n_cores": 6,
+    "pc": 18,
+    "px_height": 749,
+    "px_width": 810,
+    "ram": 1773,
+    "sc_h": 15,
+    "sc_w": 8,
+    "talk_time": 7,
+    "three_g": 1,
+    "touch_screen": 0,
+    "wifi": 1
+}
+```
+Сервис должен возвращать значение price_range от 0 до 3 и тем самым мы понимаем к какому ценовому сегменту относится данный телефон.
+
+
 
