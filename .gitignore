@@ -3,3 +3,4 @@
 *.pkl
 *.db
 mlartifacts
+*.pyc
