@@ -15,7 +15,5 @@ class FastAPIHandler():
 
     def predict(self, item_features:dict):
         item_df = pd.DataFrame(data=item_features, index=[0])
-        print(item_df)
         prediction = self.model.predict(item_df)
-        print(prediction)
         return (prediction)
