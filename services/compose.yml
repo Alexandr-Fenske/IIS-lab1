@@ -1,0 +1,38 @@
+name: comp_app
+
+services:
+  phone-predict:
+    image: phone_model:1
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./models:/models
+      
+  test_requests:
+    image: test_requests:1
+    deploy: 
+      replicas: 1
+      restart_policy:
+        condition: always
+        delay: 5s
+
+
+  prometheus:
+    image: prom/prometheus
+    ports: 
+      - "9090:9090"
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    volumes:
+      - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+    hostname: prometheus
+
+  
+  # graphana:
+  #   image: grafana/grafana
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #       - GF_SECURITY_ADMIN_USER=admin
+  #       - GF_SECURITY_ADMIN_PASSWORD=admin
+      

@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  # Каждые 15 секунд будет метрики. Если в течение 10с у него не получится их собрать, то будет прерывание 
+  # по таймауту
+scrape_configs:
+  # имя сборщика
+  - job_name: 'scrapping-main-app'
+   # Сбор будет вестись с сервиса phone-predict:8000, страница с метриками, доступ по http.
+    metrics_path: /metrics
+    scheme: http
+    
+    static_configs:
+    - targets:
+      - phone-predict:8000  

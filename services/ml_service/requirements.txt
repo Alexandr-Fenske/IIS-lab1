@@ -3,3 +3,5 @@ uvicorn
 pandas
 pickle4
 scikit-learn
+prometheus_fastapi_instrumentator
+requests
